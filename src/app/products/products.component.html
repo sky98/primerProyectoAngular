@@ -1,0 +1,14 @@
+<div class="row row-cols-1 row-cols-md-3">
+	<div *ngFor="let product of products" class="col mb-4">
+		<div class="card">
+		    <img src="/assets/angular-logo.png" class="card-img-top">
+		    <div class="card-body">
+		      <h5 class="card-title">{{product.name}}</h5>
+		      <p class="card-text">{{product.description}}</p>
+		    </div>
+		    <div class="card-footer">
+		      <small class="text-muted">{{product.value | currency: 'USD'}}</small>
+		    </div>
+		</div>
+	</div>
+</div>
